@@ -33,6 +33,7 @@ No modules.
 | <a name="input_flavour_name"></a> [flavour\_name](#input\_flavour\_name) | Optional; Required if flavor\_id is empty) The name of the desired flavor for the server. Changing this resizes the existing server. | `string` | n/a | yes |
 | <a name="input_image_id"></a> [image\_id](#input\_image\_id) | (Optional; Required if image\_name is empty and not booting from a volume. Do not specify if booting from a volume.) The image ID of the desired image for the server. Changing this rebuilds the existing server. | `string` | n/a | yes |
 | <a name="input_key_pair"></a> [key\_pair](#input\_key\_pair) | (Optional) The name of a key pair to put on the server. The key pair must already be created and associated with the tenant's account. Changing this creates a new server. | `string` | `"keypair"` | no |
+| <a name="input_metadata"></a> [metadata](#input\_metadata) | (Optional) Metadata key/value pairs to make available from within the instance. Changing this updates the existing server metadata. | `map(string)` | `{}` | no |
 | <a name="input_name"></a> [name](#input\_name) | (Required) A unique name for the resource. | `string` | n/a | yes |
 | <a name="input_networks"></a> [networks](#input\_networks) | An array of one or more networks to attach to the instance. | `map(string)` | `{}` | no |
 | <a name="input_user_data"></a> [user\_data](#input\_user\_data) | (Optional) The user data to provide when launching the instance. Changing this creates a new server. | `string` | `"#cloud-init"` | no |

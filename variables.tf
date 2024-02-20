@@ -20,6 +20,12 @@ variable "key_pair" {
   default     = "keypair"
 }
 
+variable "metadata" {
+  description = "(Optional) Metadata key/value pairs to make available from within the instance. Changing this updates the existing server metadata."
+  type        = map(string)
+  default     = {}
+}
+
 variable "name" {
   description = "(Required) A unique name for the resource."
   type        = string
