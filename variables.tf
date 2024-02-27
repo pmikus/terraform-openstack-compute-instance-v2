@@ -1,3 +1,8 @@
+variable "availability_zone" {
+  description = "The availability zone of this server."
+  type        = string
+}
+
 variable "config_drive" {
   description = "(Optional) Whether to use the config_drive feature to configure the instance. Changing this creates a new server."
   type        = bool

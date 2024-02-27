@@ -29,6 +29,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_availability_zone"></a> [availability\_zone](#input\_availability\_zone) | The availability zone of this server. | `string` | `"privateAZ"` | no |
 | <a name="input_config_drive"></a> [config\_drive](#input\_config\_drive) | (Optional) Whether to use the config\_drive feature to configure the instance. Changing this creates a new server. | `bool` | `true` | no |
 | <a name="input_flavour_name"></a> [flavour\_name](#input\_flavour\_name) | Optional; Required if flavor\_id is empty) The name of the desired flavor for the server. Changing this resizes the existing server. | `string` | n/a | yes |
 | <a name="input_image_id"></a> [image\_id](#input\_image\_id) | (Optional; Required if image\_name is empty and not booting from a volume. Do not specify if booting from a volume.) The image ID of the desired image for the server. Changing this rebuilds the existing server. | `string` | n/a | yes |
