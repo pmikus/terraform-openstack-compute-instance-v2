@@ -6,6 +6,9 @@ resource "openstack_compute_instance_v2" "compute_instance_v2" {
   key_pair          = var.key_pair
   metadata          = var.metadata
   name              = var.name
+  scheduler_hints {
+    group = var.scheduler_hints_group
+  }
   user_data         = var.user_data
 
   dynamic "network" {

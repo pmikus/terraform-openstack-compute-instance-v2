@@ -42,6 +42,11 @@ variable "networks" {
   default     = {}
 }
 
+variable "scheduler_hints_group" {
+  description = "(Required) Provide the Nova scheduler with hints on how the instance should be launched."
+  type        = string
+}
+
 variable "user_data" {
   description = "(Optional) The user data to provide when launching the instance. Changing this creates a new server."
   type        = string
